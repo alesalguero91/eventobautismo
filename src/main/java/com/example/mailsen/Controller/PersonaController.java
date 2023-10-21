@@ -40,10 +40,7 @@ public class PersonaController {
         iPersonaService.crearPersona(per);
     }
     
-    @GetMapping("/persona/perfil")
-    public Persona traerPerfil(){
-     return iPersonaService.buscarPersona((long)1);
-    }
+    
     
     @GetMapping("/persona/buscar/{id}")
     @ResponseBody
